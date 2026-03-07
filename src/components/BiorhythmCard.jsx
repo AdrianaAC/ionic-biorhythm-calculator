@@ -1,10 +1,11 @@
-import { IonCard, IonCardContent, IonCardHeader, IonCardTitle } from "@ionic/react";
+import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonIcon } from "@ionic/react";
 import "./BiorhythmCard.css";
 import React from "react";
 import "../App.css";
 import dayjs from "dayjs"; 
 import  {calculateBiorhythms} from "../calculations";
-import BiorhythmChart from "./BiorhythmChart";
+import BiorhythmChart from "./BiorhythmChart.jsx";
+import { close } from "ionicons/icons";
 
 function formatDate(isoString) {
   return dayjs(isoString).format("D MMM YYYY")
@@ -15,7 +16,7 @@ function BiorhythmCard({birthDate, targetDate}) {
     return (
         <div>
         <IonCard className="ion-text-center">
-         <ion-icon name="close"></ion-icon>
+         <IonIcon icon={close} aria-hidden="true" />
          <IonCardHeader>
            <IonCardTitle>{formatDate(targetDate)}</IonCardTitle>
          </IonCardHeader>
