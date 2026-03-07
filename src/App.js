@@ -18,7 +18,7 @@ import {useLocalStorage} from "./hooks";
 function App() {
   const [birthDate, setBirthDate] = useLocalStorage("birthDate","");
   const [name, setName] = useLocalStorage("name","");
-  const [targetDate, setTargetDate] = useLocalStorage(new Date().toISOString());
+  const [targetDate, setTargetDate] = useLocalStorage("targetDate", new Date().toISOString());
 
   return (
     <IonApp>
