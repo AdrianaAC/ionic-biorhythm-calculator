@@ -14,6 +14,10 @@ https://ionic-biorhythm-calculator.vercel.app/
 
 ![Biorhythm Calculator Screenshot](./bioCalc.png)
 
+# 🎬 Demo
+
+[![Biorhythm Calculator Demo](./bioCalc.gif)](https://ionic-biorhythm-calculator.vercel.app/)
+
 ---
 
 # ✨ Features
